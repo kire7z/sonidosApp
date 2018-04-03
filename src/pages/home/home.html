@@ -10,7 +10,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-refresher enabled="!ordenando" (ionRefresh)="refrescar($event)">
+  <ion-refresher enabled={{!ordenando}} (ionRefresh)="refrescar($event)">
     <ion-refresher-content
       pullingIcon="arrow-dropdown"
       pullingText="Pull to refresh"
